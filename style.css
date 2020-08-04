@@ -4,4 +4,11 @@ div{
   font-family: "Times";
   font-size: 20px;
   padding: 5px 8px;
+
+}
+div:nth-child(even){
+  background-image: url('banner.jpg');
+  background-size: cover; 
+  height: 100%; 
+  overflow: hidden;
 }

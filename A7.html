@@ -27,11 +27,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       function encodeIt(){
-var txt = "https://getbootstrap.com/docs/4.1/content/images/";
-var n = txt.replace(":", "%3A");
-var m = n.replace(/\//g,"%2F");
-document.getElementById("output").innerHTML=m;
-}
+        var txt = "https://getbootstrap.com/docs/4.1/content/images/";
+        var m = encodeURIComponent("https://getbootstrap.com/docs/4.1/content/images/")
+        document.getElementById("output").innerHTML=m;
+      }
 </script>
   </body>
 </html>
